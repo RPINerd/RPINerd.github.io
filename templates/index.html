@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio website showcasing projects and skills">
+    <title>RPINerd IO</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- Preconnect to improve performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Optional: Add Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar/Navigation Component -->
+    <aside class="sidebar" role="complementary" aria-label="sidebar">
+        <div class="profile-container">
+            <img src="../static/profile.jpg" alt="Profile Picture" class="profile-pic" loading="eager">
+            <h3 class="profile-name">RPINerd</h3>
+            <p class="profile-title">Bioinformatics Specialist</p>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="main-nav" role="navigation" aria-label="main navigation">
+            <ul>
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                <li><a href="#blog" class="nav-link" data-section="blog">Blog</a></li>
+            </ul>
+        </nav>
+
+        <!-- Social Links Component -->
+        <div class="social-links">
+            <a href="https://github.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                <span class="social-icon">GitHub</span>
+            </a>
+            <a href="https://linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                <span class="social-icon">LinkedIn</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section" aria-labelledby="home-title">
+            <div class="container">
+                <h1 id="home-title" class="section-title">Welcome to my little corner of the interwebs!</h1>
+                <div class="hero">
+                    <p class="intro-text">I'm a bioinformatics specialist, python developer. Hobbyist maker, CAD designer, woodworker, and tinkerer with almost all things DIY.</p>
+                    <div class="cta-container">
+                        <a href="#contact" class="cta-button">Get in Touch</a>
+                        <a href="#projects" class="cta-button secondary">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a bioinformatics specialist, python developer. Hobbyist maker, CAD designer, woodworker, and tinkerer with almost all things DIY.</p>
+                        <p>Proficient in Python, Flask, Perl, and Bash scripting</p>
+                        <p>Experienced with Docker, Linux, and version control using Git</p>
+                        <p>Skilled in database management with MySQL, PostgreSQL, and SQLite</p>
+                        <p>Web development expertise in HTML5, CSS3</p>
+                        <p>API testing and development using Postman</p>
+                        <p>Proficient in using VS Code for development.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skills-group">
+                            <h4>Code</h4>
+                            <ul class="skills-list">
+                                <li>Python</li>
+                                <li>HTML & CSS</li>
+                                <li>Perl</li>
+                                <li>Bash</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section-title">Projects</h2>
+                <div class="project-grid">
+                    <!-- Project Card Component (repeated) -->
+                    <article class="project-card">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">A full-featured online store with cart functionality, user accounts, and payment processing.</p>
+                        <ul class="project-tech">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">Source Code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">Real-time weather application with location search and 5-day forecasts.</p>
+                        <ul class="project-tech">
+                            <li>JavaScript</li>
+                            <li>Weather API</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">Source Code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">A productivity application with task categories, due dates, and user authentication.</p>
+                        <ul class="project-tech">
+                            <li>Vue.js</li>
+                            <li>Firebase</li>
+                            <li>CSS Grid</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">Source Code</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Contact</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p>I'm open to freelance opportunities and collaborations. Feel free to reach out if you'd like to connect!</p>
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <span class="contact-label">Email:</span>
+                                <a href="mailto:example@example.com">example@example.com</a>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-label">Location:</span>
+                                <span>Maryland, US</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section" aria-labelledby="blog-title">
+            <div class="container">
+                <h2 id="blog-title" class="section-title">Blog</h2>
+                <div class="blog-posts">
+                    <!-- Blog Post Component (repeated) -->
+                    <article class="blog-post">
+                        <h3 class="blog-title">Understanding React Hooks</h3>
+                        <div class="post-meta">
+                            <time datetime="2023-06-01">June 1, 2023</time>
+                            <span class="post-category">React</span>
+                        </div>
+                        <p class="post-excerpt">An exploration of React's hooks system and how it simplifies state management in functional components.</p>
+                        <a href="#" class="read-more" aria-label="Read more about Understanding React Hooks">Read More</a>
+                    </article>
+
+                    <article class="blog-post">
+                        <h3 class="blog-title">CSS Grid vs Flexbox</h3>
+                        <div class="post-meta">
+                            <time datetime="2023-05-15">May 15, 2023</time>
+                            <span class="post-category">CSS</span>
+                        </div>
+                        <p class="post-excerpt">Comparing two powerful CSS layout systems and when to use each for optimal responsive design.</p>
+                        <a href="#" class="read-more" aria-label="Read more about CSS Grid vs Flexbox">Read More</a>
+                    </article>
+
+                    <article class="blog-post">
+                        <h3 class="blog-title">Getting Started with TypeScript</h3>
+                        <div class="post-meta">
+                            <time datetime="2023-04-28">April 28, 2023</time>
+                            <span class="post-category">TypeScript</span>
+                        </div>
+                        <p class="post-excerpt">A beginner's guide to setting up TypeScript in your projects and leveraging its type system.</p>
+                        <a href="#" class="read-more" aria-label="Read more about Getting Started with TypeScript">Read More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p class="copyright">&copy; <span id="current-year">2025</span> RPINerd. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Script -->
+    <script src="../static/script.js"></script>
+</body>
+</html>
