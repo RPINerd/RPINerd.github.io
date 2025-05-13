@@ -1,0 +1,7 @@
+# IDE
+vscode
+
+# Temp
+temp/
+*.temp
+*.tmp
